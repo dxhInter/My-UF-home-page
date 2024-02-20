@@ -52,7 +52,7 @@ export default ({ mode }) =>
           background_color: "#424242",
           icons: [
             {
-              src: "/images/icon/48.png",
+              src: "./images/icon/48.png",
               sizes: "48x48",
               type: "image/png",
             },
@@ -72,7 +72,7 @@ export default ({ mode }) =>
               type: "image/png",
             },
             {
-              src: "/images/icon/144.png",
+              src: "images/icon/144.png",
               sizes: "144x144",
               type: "image/png",
             },
@@ -91,6 +91,7 @@ export default ({ mode }) =>
       }),
       viteCompression(),
     ],
+    base: "./",
     server: {
       port: "3000",
       open: true,

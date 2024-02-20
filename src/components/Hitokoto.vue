@@ -36,7 +36,7 @@ import debounce from "@/utils/debounce.js";
 const store = mainStore();
 
 // 开启音乐面板按钮显隐
-const openMusicShow = ref(false);
+const openMusicShow = ref(true);
 
 // 一言数据
 const hitokotoData = reactive({
