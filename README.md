@@ -5,6 +5,8 @@
 - 提供个人联系方式
 - 播放音乐
 
+![效果图](https://08cb9bad.telegraph-image-qjf.pages.dev/file/cc29daab464ee9d7ab8e0.png)
+
 ## 部署方法
 > 本项目使用vite构建，需要安装pnpm
 ```bash
