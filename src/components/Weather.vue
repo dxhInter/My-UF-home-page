@@ -64,9 +64,13 @@ const getWeatherData = async () => {
       if (adCode.infocode !== "10000") {
         throw "地区查询失败";
       }
+      if (adCode.infocode === "10000" && adCode.adCode === null) {
+        throw "未获取到地区信息, 服务只在中国提供";
+      }
       weatherData.adCode = {
         city: adCode.city,
         adcode: adCode.adcode,
+        // adcode: 150600,
       };
       // 获取天气信息
       const result = await getWeather(mainKey, weatherData.adCode.adcode);
@@ -79,7 +83,13 @@ const getWeatherData = async () => {
     }
   } catch (error) {
     console.error("天气信息获取失败:" + error);
-    onError("天气信息获取失败");
+    if (error === "地区查询失败") {
+      onError("地区查询失败, 请检查高德开发者 Key 是否正确");
+    } else if (error === "未获取到地区信息, 服务只在中国提供") {
+      onError("未获取到地区信息, 服务只在中国提供");
+    } else {
+      onError("天气服务只在中国提供, 天气信息获取失败");
+    }
   }
 };
 

@@ -16,5 +16,11 @@
     "icon": "./images/icon/email.png",
     "tip": "Send a Email",
     "url": "mailto:dxh0505@126.com"
+  },
+  {
+    "name": "电话",
+    "icon": "./images/icon/telegram.png",
+    "tip": "拨打电话！",
+    "url": "tel://+8618810760380"
   }
 ]
