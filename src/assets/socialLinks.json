@@ -8,13 +8,13 @@
   {
     "name": "QQ",
     "icon": "./images/icon/qq.png",
-    "tip": "有什么事吗",
+    "tip": "通过QQ联系我",
     "url": "https://res.abeim.cn/api/qq/?qq=592310050"
   },
   {
     "name": "Email",
     "icon": "./images/icon/email.png",
-    "tip": "Send a Email",
+    "tip": "Send an email",
     "url": "mailto:dxh0505@126.com"
   },
   {

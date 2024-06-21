@@ -1,7 +1,12 @@
 [
   {
     "icon": "AddressBookRegular",
-    "name": "resume",
-    "link": "https://www.cise.ufl.edu/~dux1/new-jianli.pdf"
+    "name": "Resume",
+    "link": "./new-resume.pdf"
+  },
+  {
+    "icon": "Cloud",
+    "name": "Cloud Monitor",
+    "link": "https://monitor.ufcs.top/"
   }
 ]
